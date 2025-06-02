@@ -1,20 +1,20 @@
 .dinosaur-card {
-  background: linear-gradient(145deg, #f0f8ff 0%, #e6f3ff 100%);
+  background: linear-gradient(145deg, #D8F3DC 0%, #B7E4C7 100%);
   border-radius: 20px;
   padding: 0;
   margin: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 32px rgba(27, 67, 50, 0.2);
   transition: all 0.3s ease;
   cursor: pointer;
   overflow: hidden;
-  border: 2px solid #d4af37;
+  border: 2px solid #52B788;
   max-width: 400px;
 }
 
 .dinosaur-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
-  border-color: #b8860b;
+  box-shadow: 0 12px 40px rgba(27, 67, 50, 0.3);
+  border-color: #40916C;
 }
 
 .dinosaur-image-container {
@@ -39,8 +39,8 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background: rgba(139, 69, 19, 0.9);
-  color: white;
+  background: rgba(27, 67, 50, 0.9);
+  color: #F7DC6F;
   padding: 8px 12px;
   border-radius: 20px;
   font-size: 0.8rem;
@@ -54,15 +54,15 @@
 
 .dinosaur-name {
   font-size: 1.8rem;
-  color: #2c3e50;
+  color: #1B4332;
   margin: 0 0 5px 0;
   font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  text-shadow: 1px 1px 2px rgba(27, 67, 50, 0.1);
 }
 
 .scientific-name {
   font-style: italic;
-  color: #7f8c8d;
+  color: #2D6A4F;
   margin: 0 0 15px 0;
   font-size: 1rem;
 }
@@ -82,7 +82,7 @@
 
 .stat-label {
   font-weight: bold;
-  color: #34495e;
+  color: #1B4332;
 }
 
 .diet-badge {
@@ -95,27 +95,27 @@
 }
 
 .diet-badge.carnívoro {
-  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  background: linear-gradient(135deg, #D2001C, #B91C1C);
   color: white;
 }
 
 .diet-badge.herbívoro {
-  background: linear-gradient(135deg, #27ae60, #229954);
+  background: linear-gradient(135deg, #40916C, #2D6A4F);
   color: white;
 }
 
 .diet-badge.omnívoro {
-  background: linear-gradient(135deg, #f39c12, #d68910);
-  color: white;
+  background: linear-gradient(135deg, #F7DC6F, #E6CC00);
+  color: #1B4332;
 }
 
 .stat-value {
-  color: #2c3e50;
+  color: #1B4332;
   font-weight: 600;
 }
 
 .dinosaur-description {
-  color: #5d6d7e;
+  color: #2D6A4F;
   line-height: 1.6;
   margin: 0;
   font-size: 0.95rem;

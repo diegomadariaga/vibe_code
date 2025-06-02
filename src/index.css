@@ -4,8 +4,8 @@
   font-weight: 400;
 
   color-scheme: light;
-  color: #2c3e50;
-  background-color: #f8f9fa;
+  color: #F7DC6F;
+  background-color: #1B4332;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,7 +21,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: linear-gradient(135deg, #e8f5e8 0%, #f0f8ff 50%, #fff8dc 100%);
+  background: linear-gradient(135deg, #1B4332 0%, #2D6A4F 30%, #40916C  60%, #52B788 100%);
 }
 
 #root {
@@ -29,7 +29,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #2c3e50;
+  color: #F7DC6F;
   font-weight: 600;
 }
 
@@ -40,39 +40,39 @@ h1 {
 
 a {
   font-weight: 500;
-  color: #8B4513;
+  color: #F7DC6F;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #CD853F;
+  color: #52B788;
 }
 
 button {
   border-radius: 12px;
-  border: 2px solid #d4af37;
+  border: 2px solid #D4A574;
   padding: 0.8em 1.5em;
   font-size: 1em;
   font-weight: 600;
   font-family: inherit;
-  background: linear-gradient(135deg, #fff, #f8f9fa);
-  color: #2c3e50;
+  background: linear-gradient(135deg, #F7DC6F, #E6CC00);
+  color: #1B4332;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(27, 67, 50, 0.3);
 }
 
 button:hover {
-  border-color: #b8860b;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-color: #B8860B;
+  background: linear-gradient(135deg, #E6CC00, #F7DC6F);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 16px rgba(27, 67, 50, 0.4);
 }
 
 button:active {
   transform: translateY(0);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(27, 67, 50, 0.2);
 }
 
 /* Scroll personalizado */
@@ -81,17 +81,17 @@ button:active {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #2D6A4F;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #8B4513, #CD853F);
+  background: linear-gradient(135deg, #40916C, #52B788);
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #CD853F, #8B4513);
+  background: linear-gradient(135deg, #52B788, #74C69D);
 }
 button:focus,
 button:focus-visible {
@@ -100,13 +100,13 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #1B4332;
+    background-color: #F7DC6F;
   }
   a:hover {
-    color: #747bff;
+    color: #40916C;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #E6CC00;
   }
 }
