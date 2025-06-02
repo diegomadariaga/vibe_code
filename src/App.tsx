@@ -1,35 +1,58 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from 'react';
+import Header from './components/Header';
+import DinosaurCard from './components/DinosaurCard';
+import DinosaurModal from './components/DinosaurModal';
+import { dinosaurs } from './data/dinosaurs';
+import type { Dinosaur } from './types/dinosaur';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [selectedDinosaur, setSelectedDinosaur] = useState<Dinosaur | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleDinosaurSelect = (dinosaur: Dinosaur) => {
+    setSelectedDinosaur(dinosaur);
+    setIsModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setIsModalOpen(false);
+    setSelectedDinosaur(null);
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="app">
+      <Header />
+      
+      <main className="main-content">
+        <section className="intro-section">
+          <h2>Nuestros Dinosaurios</h2>
+          <p>Haz clic en cualquier dinosaurio para conocer más sobre estas fascinantes criaturas prehistóricas.</p>
+        </section>
+        
+        <section className="dinosaurs-grid">
+          {dinosaurs.map((dinosaur) => (
+            <DinosaurCard 
+              key={dinosaur.id} 
+              dinosaur={dinosaur} 
+              onSelect={handleDinosaurSelect}
+            />
+          ))}
+        </section>
+      </main>
+
+      <DinosaurModal 
+        dinosaur={selectedDinosaur}
+        isOpen={isModalOpen}
+        onClose={handleModalClose}
+      />
+
+      <footer className="footer">
+        <p>&copy; 2025 Nicolinzoo Jurassic. Todos los derechos reservados.</p>
+        <p>Un zoológico virtual donde los dinosaurios cobran vida 🦕</p>
+      </footer>
+    </div>
+  );
 }
 
-export default App
+export default App;

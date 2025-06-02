@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Cuerpo del erizo-dinosaurio -->
+  <ellipse cx="100" cy="120" rx="60" ry="45" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Cabeza -->
+  <circle cx="100" cy="70" r="35" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Hocico -->
+  <ellipse cx="100" cy="80" rx="15" ry="10" fill="#A0522D"/>
+  
+  <!-- Ojos -->
+  <circle cx="90" cy="65" r="6" fill="white"/>
+  <circle cx="110" cy="65" r="6" fill="white"/>
+  <circle cx="90" cy="65" r="3" fill="black"/>
+  <circle cx="110" cy="65" r="3" fill="black"/>
+  
+  <!-- Púas del erizo -->
+  <polygon points="80,50 85,30 90,50" fill="#654321"/>
+  <polygon points="90,45 95,25 100,45" fill="#654321"/>
+  <polygon points="100,40 105,20 110,40" fill="#654321"/>
+  <polygon points="110,45 115,25 120,45" fill="#654321"/>
+  <polygon points="120,50 125,30 130,50" fill="#654321"/>
+  
+  <!-- Púas en el cuerpo -->
+  <polygon points="70,100 75,80 80,100" fill="#654321"/>
+  <polygon points="85,95 90,75 95,95" fill="#654321"/>
+  <polygon points="105,95 110,75 115,95" fill="#654321"/>
+  <polygon points="120,100 125,80 130,100" fill="#654321"/>
+  
+  <!-- Cola de dinosaurio -->
+  <ellipse cx="50" cy="130" rx="25" ry="15" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  <ellipse cx="30" cy="135" rx="15" ry="10" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  
+  <!-- Patas -->
+  <ellipse cx="80" cy="160" rx="8" ry="15" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  <ellipse cx="120" cy="160" rx="8" ry="15" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+  <ellipse cx="75" cy="175" rx="12" ry="6" fill="#654321"/>
+  <ellipse cx="125" cy="175" rx="12" ry="6" fill="#654321"/>
+  
+  <!-- Garras -->
+  <polygon points="70,175 68,180 72,180" fill="#2F4F4F"/>
+  <polygon points="75,175 73,180 77,180" fill="#2F4F4F"/>
+  <polygon points="80,175 78,180 82,180" fill="#2F4F4F"/>
+  <polygon points="120,175 118,180 122,180" fill="#2F4F4F"/>
+  <polygon points="125,175 123,180 127,180" fill="#2F4F4F"/>
+  <polygon points="130,175 128,180 132,180" fill="#2F4F4F"/>
+</svg>
